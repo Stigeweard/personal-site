@@ -27,7 +27,7 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
     <!-- Global CSS -->
-    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.css">
     <!-- Plugins CSS -->
     <link rel="stylesheet" href="assets/plugins/font-awesome/css/font-awesome.css">
 
@@ -60,7 +60,7 @@
             <!--//profile-->
             <br>
             <br>
-            <a class="btn btn-cta-primary btn-lg pull-right" href="http://charlieharding.info" target="_blank"><i class="fa fa-file-word-o"></i> Résumé</a>
+            <a id="resume" class="btn btn-cta-primary btn-lg pull-right" href="http://charlieharding.info" target="_blank"><i class="fa fa-file-word-o"></i> Résumé</a>
         </div>
         <!--//container-->
     </header>
@@ -109,10 +109,68 @@
                                         users to submit any code they want that is then interpreted by the server.</p>
                                     <p>Future work on this project will focus on sanitizing the users input so that I can have it hosted and challenge people to (coding) duels!</p>
                                 </div>
+                                <p><a id="capstoneLink" class="more-link" target="_blank"><i class="fa fa-external-link"></i> See it in action! (modal video)</a></p>
+
+                                <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <iframe class="centered" width="1072" height="600" frameborder="0" allowfullscreen=""></iframe>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h5 class="list">Features</h5>
+                                <ul class="list">
+                                    <li>Python server built with Flask</li>
+                                    <li>Custom serverside tests for code submitted by front end</li>
+                                    <li>User signup/login</li>
+                                    <li>Hashed passwords</li>
+                                    <li>Socket connections for live updating of your opponents text editor</li>
+                                    <li>Detailed error messages when incorrect code is submitted</li>
+                                    <li>Users connect to namespaced room</li>
+                                </ul>
                                 <!--//desc-->
                             </div>
                             <!--//item-->
                             <hr class="divider" />
+                            <!--//item-->
+                            <div class="item row">
+                                <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
+                                    <img class="img-responsive project-image" src="assets/images/projects/twitchvis.png" alt="project name" />
+                                </a>
+                                <div class="desc col-md-8 col-sm-8 col-xs-12">
+                                    <h3 class="title"><a target="_blank">TwitchVis</a></h3>
+                                    <p>Data visualization project. Twitch is a platform to stream video game tournaments and all viewers simultaneously have access to the chat room. This results in large tournaments having a largely unintelligible chat room. TwitchVis remedies this problem by creating a visual representation of the most commonly used words from the past 30 seconds, updating every few seconds.</p>
+                                    <p><a id="link" class="more-link" target="_blank"><i class="fa fa-external-link"></i> See it in action! (modal video)</a></p>
+
+                                    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <iframe class="centered" width="1072" height="600" frameborder="0" allowfullscreen=""></iframe>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h5>Features</h5>
+                                    <ul>
+                                        <li>ChartJS populating with commonly said words</li>
+                                        <li>Stop words such as "and, like, if, or" filtered out</li>
+                                        <li>Twitch OAuth</li>
+                                        <li>Users can chat in chatroom</li>
+                                        <li>User can load different stream</li>
+                                    </ul>
+                                </div>
+                                <!--//desc-->
+                            </div>
+                            <!--//item-->
                             <div class="item row">
                                 <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
                                     <img class="img-responsive project-image" src="assets/images/projects/tripeaks.png" alt="project name" />
@@ -120,30 +178,17 @@
                                 <div class="desc col-md-8 col-sm-8 col-xs-12">
                                     <h3 class="title"><a target="_blank">TriPeaks Solitaire</a></h3>
                                     <p>A score-based solitaire game implementing advanced data structures.</p>
+                                    <p><a class="more-link" href="https://tripeaks.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> See it live!</a></p>
+                                    <h5>Features</h5>
                                     <ul>
                                         <li>Utilized an edge list to recursively populate a tree data structure with nodes</li>
                                         <li>Encrypted user passwords using the hashing algorithm bcrypt</li>
                                         <li>Achieved a responsive, resizable css layout for the game board using vanilla CSS (flexbox)</li>
                                         <li>Deployed full stack app to heroku, including a hosted postgres database</li>
                                     </ul>
-                                    <p><a class="more-link" href="https://tripeaks.herokuapp.com/" target="_blank"><i class="fa fa-external-link"></i> See it live!</a></p>
                                 </div>
                                 <!--//desc-->
                             </div>
-                            <!--//item-->
-
-                            <div class="item row">
-                                <a class="col-md-4 col-sm-4 col-xs-12" target="_blank">
-                                    <img class="img-responsive project-image" src="assets/images/projects/tripeaks.png" alt="project name" />
-                                </a>
-                                <div class="desc col-md-8 col-sm-8 col-xs-12">
-                                    <h3 class="title"><a target="_blank">TwitchVis</a></h3>
-                                    <p>Data visualization project. </p>
-                                    <p><a class="more-link" target="_blank"><i class="fa fa-external-link"></i> Find out more</a></p>
-                                </div>
-                                <!--//desc-->
-                            </div>
-                            <!--//item-->
 
                         </div>
                         <!--//content-->
@@ -255,25 +300,21 @@
                         <h2 class="heading">Education</h2>
                         <div class="content">
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.S. Geology, Math minor</h3>
-                                <h4 class="university">Texas A&amp;M University</h4>
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Web Development Immersive</h3>
+                                <h4 class="university">Galvanize</h4>
                             </div>
-                            <!--//item-->
-                            <div class="item">
-                                <h3 class="title"><i class="fa fa-pause-circle-o"></i>&nbsp; Leave of Absence M.S. Geology</h3>
-                                <h4 class="university">University of Kansas</h4>
-                            </div>
-                            <!--//item-->
                             <div class="item">
                                 <h3 class="title"><i class="fa fa-graduation-cap"></i> Software Engineering Immersive</h3>
                                 <h4 class="university">MakerSquare</h4>
                             </div>
-                            <!--//item-->
                             <div class="item">
-                                <h3 class="title"><i class="fa fa-graduation-cap"></i> Web Development Immersive</h3>
-                                <h4 class="university">Galvanize</h4>
+                                <h3 class="title"><i class="fa fa-pause-circle-o"></i>&nbsp; Leave of Absence M.S. Geology</h3>
+                                <h4 class="university">University of Kansas</h4>
                             </div>
-                            <!--//item-->
+                            <div class="item">
+                                <h3 class="title"><i class="fa fa-graduation-cap"></i> B.S. Geology, Math minor</h3>
+                                <h4 class="university">Texas A&amp;M University</h4>
+                            </div>
                         </div>
                         <!--//content-->
                     </div>
@@ -352,8 +393,10 @@
     <!-- ******FOOTER****** -->
     <footer class="footer">
         <div class="container text-center">
+            <a href="#">Thanks for stopping by!</a>
+
             <!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
-            <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+            <!-- <small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small> -->
         </div>
         <!--//container-->
     </footer>
